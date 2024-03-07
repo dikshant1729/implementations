@@ -1,0 +1,1 @@
+// if a%m==b%m  m = abs(b-a)*k
