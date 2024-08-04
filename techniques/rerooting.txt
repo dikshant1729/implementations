@@ -1,0 +1,7 @@
+rerooting as the name suggest changing the roots
+
+assume for a problem we need solution which needs calcultions  for its children and then we'll get the answer
+
+if we take root 1,2...n --> O(n*n)
+
+what we can do? we can look for changes if the root is changed to one of its children 

@@ -25,5 +25,6 @@ int main(){
 }
 
 // practice Q https://codeforces.com/problemset/problem/1772/D
+// https://codeforces.com/problemset/problem/348/A
 
 // it is not necessary that function which undergo BS will directly change l , r it may depend on other var
