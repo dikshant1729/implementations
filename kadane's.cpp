@@ -6,7 +6,7 @@ int main(){
     vector<int> v(n);
     for(int i=0; i<n; i++)cin>>v[i];
     int best = 0, sum = 0;
-    // kadane's is basically space optimized dp problem
+    // kadane's is basically space optimized dp solution
     for (int i = 0; i < n; i++) {
       sum = max(v[i],sum+v[i]);
       best = max(best,sum);

@@ -16,12 +16,15 @@ vector<int> nge(int arr[], int n)
             continue;
         }
         while (s.empty() == false && s.top().first < arr[i]) {
-            ans[s.top().second] = i;
-            s.pop();
+
+        ans[s.top().second] = i;
+        s.pop();
+
         }
  
         /* push next to stack so that we can find
         next greater for it */
+
         s.push({arr[i],i});
     }
     return ans;

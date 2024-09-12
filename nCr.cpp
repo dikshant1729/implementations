@@ -14,6 +14,7 @@ int powermod(int a, int b){
     }
     return res;
 }
+
 int inverse(int a){ return powermod(a, MOD - 2);}
  
 int nCr(int n , int r){
@@ -24,5 +25,8 @@ int nCr(int n , int r){
         return sum;
 }
 int main(){
+    
+    // there is also an approach to calculate nCr in O(1) time with O(n) precomputation 1<=n<=10^6
 
+    // but this approach is useful when we have to calculate nCr for large numbers
 }

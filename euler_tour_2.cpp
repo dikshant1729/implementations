@@ -57,6 +57,7 @@ int query(int start , int ending , int l , int r , int node){
 
     return q1+q2;
 }
+
 int query(int l , int r){ return query(0 , n-1 , l , r , 0);}
 
 void update(int start , int ending , int node , int index , int value){

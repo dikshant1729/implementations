@@ -2,17 +2,25 @@
 using namespace std;
 
 vector<int> prefix_function(string s) {
-    int n = (int)s.length();
+
+    int n = s.length();
+
     vector<int> pi(n);
+
     for (int i = 1; i < n; i++) {
+
         int j = pi[i-1];
-        while (j > 0 && s[i] != s[j])
-            j = pi[j-1];
-        if (s[i] == s[j])
-            j++;
+
+        while ( j > 0 && s[i] != s[j] ) j = pi[j-1];
+            
+        if ( s[i] == s[j] ) j++;
+           
         pi[i] = j;
+
     }
+
     return pi;
+
 }
 
 vector<int> z_function(string s) {
@@ -31,8 +39,6 @@ vector<int> z_function(string s) {
 usecases: search for a substring
           number of occurences of each prefix
           number of different substrings
-          
-
 */
 
 int main(){
