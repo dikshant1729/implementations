@@ -1,3 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int AreAll9s(vector<int> num, int n )
+{
+    int i;
+    for(i = 0; i < n; ++i)
+        if (num[i] != 9)
+            return 0;
+             
+    return 1;
+}
+
 vector<int> generateNextPalindromeUtil (vector<int> num, int n )
 {
      
@@ -77,11 +90,16 @@ vector<int> nextsmallestpallindrome(vector<int> num , int n){
  	if (AreAll9s(num, n))
     {
         ans.push_back(1);
-        for(i = 1; i < n; i++)ans.push_back(0);
+        for(int i = 1; i < n; i++)ans.push_back(0);
+        ans.push_back(1);
     }
     else
     {
         ans = generateNextPalindromeUtil(num, n);
     }
     return ans;
+ }
+
+ int main(){
+
  }
